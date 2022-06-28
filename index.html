@@ -100,32 +100,33 @@
             <!-- ***************************** Location and restaurant Search *************************************-->
             <location class="row justify-content-center ">
                 <!-- ************************************ location *************************************** -->
-                <div class=" col-lg-3 col-md-4 col-sm-10 col-xs-12 col-12 row p-0 m-0  mt-4 position-relative">
+                <div class=" col-lg-3 col-md-4 col-sm-10 col-xs-12 col-12 row p-0 m-0  mt-4 position-relative" data-bs-toggle="collapse" data-bs-target="#guwahati-suggestions" aria-controls="collapseExample">
                     <div class="col-12 m-0 p-0">
-                        <!-- ************************************ location Input *************************************** -->
-                        <input type="text" placeholder="Please type a location" class="form-control list-group-flush" data-bs-toggle="collapse" data-bs-target="#guwahati-suggestions" aria-controls="collapseExample"/>
-                        <!-- ************************************ location Suggestions *************************************** -->
-                        <div class=" bg-white border shadow position-absolute mt-2 guwahati-suggestions p-3 collapse" style="z-index:3;" id="guwahati-suggestions">
-                            <p class=" bg-white select-item">Sarjapur Road, Bengaluru</p>
-                            <p class=" bg-white select-item">HSR Layout, Bengaluru</p>
-                            <p class=" bg-white select-item">Kormangala, Bengaluru</p>
-                            <p class=" bg-white select-item">Jay Nagar, Bengaluru</p>
+                         <!--************************************ location Input *************************************** -->
+                        <input type="text" placeholder="Please type a location" class="form-control list-group-flush" id="location-input"/>
+                         <!--************************************ location Suggestions *************************************** -->
+                        <div class=" bg-white border shadow position-absolute mt-2 guwahati-suggestions p-3 collapse" style="z-index:3;" id="guwahati-suggestions" >
+                            <p class=" bg-white select-item" onclick="Location('Sarjapur Road, Bengaluru')" >Sarjapur Road, Bengaluru</p>
+                            <p class=" bg-white select-item" onclick="Location('HSR Layout, Bengaluru')" >HSR Layout, Bengaluru</p>
+                            <p class=" bg-white select-item" onclick="Location('Kormangala, Bengaluru')"  >Kormangala, Bengaluru</p>
+                            <p class=" bg-white select-item" onclick="Location('Jay Nagar, Bengaluru')"  >Jay Nagar, Bengaluru</p>
                         </div>
                     </div>
                     
-                </div>
+                </div> 
+                
                 <!-- ************************************ restaurant  *************************************** -->
                 <div class="col-lg-5 col-md-6 col-sm-10 col-xs-12 col-12 row p-0 m-0 mt-4 position-relative ms-lg-2 ms-md-2 restaurant mb-5">
                     <div class="col-12 m-0 p-0 " data-bs-toggle="collapse" data-bs-target="#restaurant-suggestions" aria-controls="collapseExample">
                         <!-- ************************************ restaurant Input *************************************** -->
                         <div class="input-group restaurant  p-0 m-0 mb-2">
                             <span class="input-group-text list-group-flush bg-white "><i class="fa fa-search restaurant-suggestions" aria-hidden="true"></i></span>
-                            <input type="text" placeholder="Search for restaurants" class="form-control list-group-flush border-0" style="z-index:2;" />
+                            <input type="text" placeholder="Search for restaurants" class="form-control list-group-flush border-0" style="z-index:2;" id="restaurant-input"/>
                         </div>
                         <!-- ************************************ restaurant suggestions *************************************** -->
                         <div class=" bg-white border shadow position-absolute restaurant-suggestions collapse" id="restaurant-suggestions">
                             <!-- ************************************ restaurant suggestion 1 *************************************** -->
-                            <div class="card row mx-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush">
+                            <div class="card row mx-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')" >
                                 <div class="col-2">
                                     <img src="img1.jpg" alt="img" class="search-image"/>
                                 </div>
@@ -135,7 +136,7 @@
                                 </div>
                             </div>
                             <!-- ************************************ restaurant suggestion 2 *************************************** -->
-                            <div class="card row mx-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush">
+                            <div class="card row mx-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')">
                                 <div class="col-2">
                                     <img src="img1.jpg" alt="img" class="search-image"/>
                                 </div>
@@ -145,7 +146,7 @@
                                 </div>
                             </div>
                             <!-- ************************************ restaurant suggestion 3 *************************************** -->
-                            <div class="card row mx-2 m-0 py-3 flex-row align-items-center border-0 border-bottom list-group-flush">
+                            <div class="card row mx-2 m-0 py-3 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')">
                                 <div class="col-2">
                                     <img src="img1.jpg" alt="img" class="search-image"/>
                                 </div>
@@ -256,6 +257,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
