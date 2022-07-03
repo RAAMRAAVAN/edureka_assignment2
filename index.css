@@ -64,8 +64,18 @@
 .breakfast-text{
   color:#8C96AB;
 }
+.select-item{
+  background-color: white;
+  width:100%;
+}
 .select-item:hover{
-  background-color: blue;
+  background-color: rgb(38, 164, 248);
+  cursor: pointer;
+  color: white;
+}
+.item:hover{
+  /* background-color: red; */
+  cursor: pointer;
 }
 /* 
   ##Device = Desktops

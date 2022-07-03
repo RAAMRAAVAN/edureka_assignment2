@@ -103,13 +103,13 @@
                 <div class=" col-lg-3 col-md-4 col-sm-10 col-xs-12 col-12 row p-0 m-0  mt-4 position-relative" data-bs-toggle="collapse" data-bs-target="#guwahati-suggestions" aria-controls="collapseExample">
                     <div class="col-12 m-0 p-0">
                          <!--************************************ location Input *************************************** -->
-                        <input type="text" placeholder="Please type a location" class="form-control list-group-flush" id="location-input"/>
+                        <input type="text" placeholder="Please type a location" class="form-control list-group-flush p-2" id="location-input"/>
                          <!--************************************ location Suggestions *************************************** -->
-                        <div class=" bg-white border shadow position-absolute mt-2 guwahati-suggestions p-3 collapse" style="z-index:3;" id="guwahati-suggestions" >
-                            <p class=" bg-white select-item" onclick="Location('Sarjapur Road, Bengaluru')" >Sarjapur Road, Bengaluru</p>
-                            <p class=" bg-white select-item" onclick="Location('HSR Layout, Bengaluru')" >HSR Layout, Bengaluru</p>
-                            <p class=" bg-white select-item" onclick="Location('Kormangala, Bengaluru')"  >Kormangala, Bengaluru</p>
-                            <p class=" bg-white select-item" onclick="Location('Jay Nagar, Bengaluru')"  >Jay Nagar, Bengaluru</p>
+                        <div class="  border shadow position-absolute mb-0 guwahati-suggestions collapse" style="z-index:3;" id="guwahati-suggestions" >
+                            <p class="select-item mb-0 px-3 py-2" onclick="Location('Sarjapur Road, Bengaluru')" >Sarjapur Road, Bengaluru</p>
+                            <p class="select-item mb-0 px-3 py-2" onclick="Location('HSR Layout, Bengaluru')" >HSR Layout, Bengaluru</p>
+                            <p class="select-item mb-0 px-3 py-2" onclick="Location('Kormangala, Bengaluru')"  >Kormangala, Bengaluru</p>
+                            <p class="select-item mb-0 px-3 py-2" onclick="Location('Jay Nagar, Bengaluru')"  >Jay Nagar, Bengaluru</p>
                         </div>
                     </div>
                     
@@ -120,13 +120,13 @@
                     <div class="col-12 m-0 p-0 " data-bs-toggle="collapse" data-bs-target="#restaurant-suggestions" aria-controls="collapseExample">
                         <!-- ************************************ restaurant Input *************************************** -->
                         <div class="input-group restaurant  p-0 m-0 mb-2">
-                            <span class="input-group-text list-group-flush bg-white "><i class="fa fa-search restaurant-suggestions" aria-hidden="true"></i></span>
-                            <input type="text" placeholder="Search for restaurants" class="form-control list-group-flush border-0" style="z-index:2;" id="restaurant-input"/>
+                            <span class="input-group-text list-group-flush bg-white "><i class="fa fa-search restaurant-suggestions p-0 m-0" aria-hidden="true"></i></span>
+                            <input type="text" placeholder="Search for restaurants" class="form-control list-group-flush border-0 p-2" style="z-index:2; height: 42px;" id="restaurant-input"/>
                         </div>
                         <!-- ************************************ restaurant suggestions *************************************** -->
                         <div class=" bg-white border shadow position-absolute restaurant-suggestions collapse" id="restaurant-suggestions">
                             <!-- ************************************ restaurant suggestion 1 *************************************** -->
-                            <div class="card row mx-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')" >
+                            <div class="select-item card row px-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')" >
                                 <div class="col-2">
                                     <img src="img1.jpg" alt="img" class="search-image"/>
                                 </div>
@@ -136,7 +136,7 @@
                                 </div>
                             </div>
                             <!-- ************************************ restaurant suggestion 2 *************************************** -->
-                            <div class="card row mx-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')">
+                            <div class="select-item card row px-2 m-0 py-2 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')">
                                 <div class="col-2">
                                     <img src="img1.jpg" alt="img" class="search-image"/>
                                 </div>
@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <!-- ************************************ restaurant suggestion 3 *************************************** -->
-                            <div class="card row mx-2 m-0 py-3 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')">
+                            <div class="select-item card row px-2 m-0 py-3 flex-row align-items-center border-0 border-bottom list-group-flush" onclick="Location2('The big chill cakery')">
                                 <div class="col-2">
                                     <img src="img1.jpg" alt="img" class="search-image"/>
                                 </div>
@@ -173,7 +173,7 @@
         <div class="row">
             <!-- ************************************ Breakfast *************************************** -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 pe-3 m-0 mb-3">
-                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow">
+                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow item">
                     <!-- ************************************ breakfast image *************************************** -->
                     <div class="col-5 p-0 m-0">
                         <img src="img1.jpg" class="img-fluid"/>
@@ -187,7 +187,7 @@
             </div>
             <!-- ************************************ Lunch *************************************** -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 pe-3 m-0 mb-3">
-                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow">
+                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow item">
                     <!-- ************************************ Lunch image *************************************** -->
                     <div class="col-5 p-0 m-0">
                         <img src="img2.jpg" class="img-fluid"/>
@@ -201,7 +201,7 @@
             </div>
             <!-- ************************************ Snacks *************************************** -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 pe-3 m-0 mb-3">
-                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow">
+                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow item">
                     <!-- ************************************ Snacks image *************************************** -->
                     <div class="col-5 p-0 m-0">
                         <img src="img3.jpg" class="img-fluid"/>
@@ -215,7 +215,7 @@
             </div>
             <!-- ************************************ Dinner *************************************** -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 pe-3 m-0 mb-3">
-                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow">
+                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow item">
                     <!-- ************************************ Dinner image *************************************** -->
                     <div class="col-5 p-0 m-0">
                         <img src="img4.jpg" class="img-fluid"/>
@@ -229,7 +229,7 @@
             </div>
             <!-- ************************************ Drinks *************************************** -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 pe-3 m-0 mb-3">
-                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow">
+                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow item">
                     <!-- ************************************ Drinks image *************************************** -->
                     <div class="col-5 p-0 m-0">
                         <img src="img5.jpg" class="img-fluid"/>
@@ -243,7 +243,7 @@
             </div>
             <!-- ************************************ Night Life *************************************** -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 pe-3 m-0 mb-3">
-                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow">
+                <div class="card p-0 m-0 row list-group-flush flex-row border-0 shadow item">
                     <!-- ************************************ NightLife image *************************************** -->
                     <div class="col-5 p-0 m-0">
                         <img src="img6.jpg" class="img-fluid"/>
